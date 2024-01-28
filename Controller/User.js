@@ -21,7 +21,7 @@ exports.Login = async (req, res) => {
         else {
             const AccessToken = await jwt.sign({ id: user._id }, process.env.AccessToken, { expiresIn: process.env.ExpireIn });
             const RdfreshToken = await jwt.sign({ id: user._id }, process.env.RefreshToken, { expiresIn: process.env.ExpireInRefresh });
-            return res.status(200).send({ Toke: AccessToken, RdfreshToken: RdfreshToken, Msg: 'Logged successfully' });
+            return res.status(200).send({ Token: AccessToken, RdfreshToken: RdfreshToken, Msg: 'Logged successfully' });
         }
     }
     catch (e) {
