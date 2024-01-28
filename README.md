@@ -126,7 +126,7 @@ Response Format:
 ```
 {
   "Token": "authentication_token",
-  "RdfreshToken":"refresh_authentication_token",
+  "RefreshToken":"refresh_authentication_token",
   "Msg": "Logged successfully"
 }
 ```
@@ -205,7 +205,7 @@ Response Format:
 ```
 {
  "Token": "authentication_token",
-  "RdfreshToken":"refresh_authentication_token",
+  "RefreshToken":"refresh_authentication_token",
   "Msg": "Generate token successfully"
 }
 
